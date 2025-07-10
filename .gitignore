@@ -1,0 +1,34 @@
+# 1. Ignore Python virtual environments
+.venv/
+
+# 2. Ignore PyCharm and system files (if using PyCharm)
+.idea/
+*.iml
+
+# 3. Ignore Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 4. Ignore YOLO training outputs and large generated files
+runs/
+YOLOv8/train*/
+YOLOv8/val*/
+
+# 5. Ignore YOLO model weights (if not versioning them)
+YOLOv8/models/*.pt
+
+# 6. Ignore PDFs and screenshots (if large or temporary)
+agent_better/kaufland/downloads/
+agent_better/lidl/downloads/
+agent_better/kaufland/screenshots/
+agent_better/lidl/screenshots/
+
+# 7. Ignore logs or temporary testing files
+*.log
+*.tmp
+
+# 8. (Optional) Ignore dataset backup or image cache folders
+YOLOv8/data/all_images/
+YOLOv8/data/all_labels/
