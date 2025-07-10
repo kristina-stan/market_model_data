@@ -3,8 +3,8 @@ import os
 
 # Input paths
 input_dirs = {
-    "kaufland": "E:/SIS_Technology/market_model_data/agent_better/kaufland/downloads",
-    "lidl": "E:/SIS_Technology/market_model_data/agent_better/lidl/downloads"
+    "kaufland": "..\kaufland\downloads",
+    "lidl": "..\lidl\downloads"
 }
 
 # Output folder
@@ -17,7 +17,9 @@ def extract_pages(store_name, source_dir):
             continue
 
         pdf_path = os.path.join(source_dir, filename)
+        print(f'This is the full path of flyer {pdf_path}')
         base_name = os.path.splitext(filename)[0]  # no .pdf
+        print(f'This is the name without \'.pfd\ at the end: {base_name}')
 
         print(f"[{store_name.upper()}] Processing: {filename}")
 
