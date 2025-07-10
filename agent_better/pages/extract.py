@@ -1,32 +1,48 @@
 from pdf2image import convert_from_path
 import os
 
-# Path to your PDF
-flyers_origin = "D:/SIS_Technology/python_scripts/agent_better/kaufland/downloads"
-output_folder = "flyers"
+# Input paths
+input_dirs = {
+    "kaufland": "E:/SIS_Technology/market_model_data/agent_better/kaufland/downloads",
+    "lidl": "E:/SIS_Technology/market_model_data/agent_better/lidl/downloads"
+}
 
-# Make sure output folder exists
+# Output folder
+output_folder = "flyers"
 os.makedirs(output_folder, exist_ok=True)
 
-for filename in os.listdir(flyers_origin):
-    if filename.endswith(".pdf"):
-        pdf_path = os.path.join(flyers_origin, filename)
-        base_name = os.path.basename(filename)
+def extract_pages(store_name, source_dir):
+    for filename in os.listdir(source_dir):
+        if not filename.lower().endswith(".pdf"):
+            continue
 
-        print(f"Processing {filename}...")
+        pdf_path = os.path.join(source_dir, filename)
+        base_name = os.path.splitext(filename)[0]  # no .pdf
 
-        # Convert PDF to images
-        pages = convert_from_path(pdf_path, dpi=300)
-        print("Converted!")
+        print(f"[{store_name.upper()}] Processing: {filename}")
 
-        # Create a subfolder for this flyer
-        flyer_folder = os.path.join(output_folder, base_name)
+        try:
+            pages = convert_from_path(pdf_path, dpi=300)
+        except Exception as e:
+            print(f"Failed to convert {filename}: {e}")
+            continue
+
+        flyer_folder = os.path.join(output_folder, store_name, base_name)
         os.makedirs(flyer_folder, exist_ok=True)
 
-        # Save each page with a unique filename
         print("Saving pages...")
-        for i, page in enumerate(pages):
-            img_filename = f"page_{i + 1}.png"
-            page.save(os.path.join(flyer_folder, img_filename), "PNG")
+        for i, page in enumerate(pages, start=1):
+            img_filename = f"page_{i}.png"
+            page_path = os.path.join(flyer_folder, img_filename)
+            page.save(page_path, format="PNG")
 
-print("All PDFs converted to images.")
+        print(f"[{store_name.upper()}] Done: {filename}\n")
+
+    print(f"[{store_name.upper()}] All PDFs processed.\n")
+
+def main():
+    for store_name, path in input_dirs.items():
+        extract_pages(store_name, path)
+
+if __name__ == "__main__":
+    main()
