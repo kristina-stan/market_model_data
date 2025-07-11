@@ -20,10 +20,12 @@ YOLOv8/val*/
 YOLOv8/models/*.pt
 
 # 6. Ignore PDFs and screenshots (if large or temporary)
-agent_better/kaufland/downloads/
-agent_better/lidl/downloads/
-agent_better/kaufland/screenshots/
-agent_better/lidl/screenshots/
+process/flyer_scrapers/kaufland/downloads/
+process/flyer_scrapers/lidl/downloads/
+process/flyer_scrapers/kaufland/screenshots/
+process/flyer_scrapers/lidl/screenshots/
+data/downloads
+data/labels
 
 # 7. Ignore logs or temporary testing files
 *.log
