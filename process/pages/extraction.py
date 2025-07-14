@@ -8,7 +8,7 @@ input_dirs = {
     "lidl": "..\lidl\downloads"
 }
 
-output_folder = "flyers"
+output_folder = "flyers_images_labels"
 create_folder_if_not_exists(output_folder)
 
 def extract_pages(store_name, source_dir):

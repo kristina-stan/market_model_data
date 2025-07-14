@@ -5,77 +5,297 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6cd19df-65a2-4f3b-b454-d2cf0d9bb77f" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/process/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/process/flyer_scrapers/kaufland/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/process/flyer_scrapers/lidl/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/process/core/testerr.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Market_Model.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Market_Model.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/images/train/page_11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/images/train/page_12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/images/train/page_13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/images/train/page_16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/images/train/page_17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/images/train/page_18.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/images/train/page_19.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/images/train/page_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/images/train/page_20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/images/train/page_21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/images/train/page_22.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/images/train/page_25.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/images/train/page_26.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/images/train/page_27.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/images/train/page_28.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/images/train/page_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/images/train/page_30.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/images/train/page_31.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/images/train/page_32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/images/train/page_34.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/images/train/page_35.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/images/train/page_7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/images/train/page_9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/images/val/page_10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/images/val/page_24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/images/val/page_36.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/labels/train/page_11.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/labels/train/page_12.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/labels/train/page_13.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/labels/train/page_16.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/labels/train/page_17.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/labels/train/page_18.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/labels/train/page_19.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/labels/train/page_2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/labels/train/page_20.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/labels/train/page_21.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/labels/train/page_22.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/labels/train/page_25.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/labels/train/page_26.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/labels/train/page_27.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/labels/train/page_28.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/labels/train/page_3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/labels/train/page_30.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/labels/train/page_31.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/labels/train/page_32.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/labels/train/page_34.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/labels/train/page_35.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/labels/train/page_7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/labels/train/page_9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/labels/val/page_10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/labels/val/page_24.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/YOLOv8/data/labels/val/page_36.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_23.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_26.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_27.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_28.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_29.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_31.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_33.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_34.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_35.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_36.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_37.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_38.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_39.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_41.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_42.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_43.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_44.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_45.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_46.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_47.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_48.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_49.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_50.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_51.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_52.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_53.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_54.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_55.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_56.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_57.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_58.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_59.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_60.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_61.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_62.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_63.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_64.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_65.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_66.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_67.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_68.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_69.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_70.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_71.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_72.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_73.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_74.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_75.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_76.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_77.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_78.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_79.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_80.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_81.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_82.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_83.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_1_07.07.2025 – 13.07.2025/page_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_2_07.07.2025 – 13.07.2025/page_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_2_07.07.2025 – 13.07.2025/page_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_2_07.07.2025 – 13.07.2025/page_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_2_07.07.2025 – 13.07.2025/page_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_2_07.07.2025 – 13.07.2025/page_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_2_07.07.2025 – 13.07.2025/page_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_2_07.07.2025 – 13.07.2025/page_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_2_07.07.2025 – 13.07.2025/page_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_2_07.07.2025 – 13.07.2025/page_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_2_07.07.2025 – 13.07.2025/page_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_3_07.07.2025 – 13.07.2025/page_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_3_07.07.2025 – 13.07.2025/page_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_3_07.07.2025 – 13.07.2025/page_11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_3_07.07.2025 – 13.07.2025/page_12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_3_07.07.2025 – 13.07.2025/page_13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_3_07.07.2025 – 13.07.2025/page_14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_3_07.07.2025 – 13.07.2025/page_15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_3_07.07.2025 – 13.07.2025/page_16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_3_07.07.2025 – 13.07.2025/page_17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_3_07.07.2025 – 13.07.2025/page_18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_3_07.07.2025 – 13.07.2025/page_19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_3_07.07.2025 – 13.07.2025/page_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_3_07.07.2025 – 13.07.2025/page_20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_3_07.07.2025 – 13.07.2025/page_21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_3_07.07.2025 – 13.07.2025/page_22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_3_07.07.2025 – 13.07.2025/page_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_3_07.07.2025 – 13.07.2025/page_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_3_07.07.2025 – 13.07.2025/page_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_3_07.07.2025 – 13.07.2025/page_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_3_07.07.2025 – 13.07.2025/page_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_3_07.07.2025 – 13.07.2025/page_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_3_07.07.2025 – 13.07.2025/page_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_4_07.07.2025 – 13.07.2025/page_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_4_07.07.2025 – 13.07.2025/page_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_4_07.07.2025 – 13.07.2025/page_11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_4_07.07.2025 – 13.07.2025/page_12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_4_07.07.2025 – 13.07.2025/page_13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_4_07.07.2025 – 13.07.2025/page_14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_4_07.07.2025 – 13.07.2025/page_15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_4_07.07.2025 – 13.07.2025/page_16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_4_07.07.2025 – 13.07.2025/page_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_4_07.07.2025 – 13.07.2025/page_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_4_07.07.2025 – 13.07.2025/page_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_4_07.07.2025 – 13.07.2025/page_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_4_07.07.2025 – 13.07.2025/page_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_4_07.07.2025 – 13.07.2025/page_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_4_07.07.2025 – 13.07.2025/page_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_4_07.07.2025 – 13.07.2025/page_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_5_07.07.2025 – 13.07.2025/page_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_5_07.07.2025 – 13.07.2025/page_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_5_07.07.2025 – 13.07.2025/page_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/kaufland/Брошура_5_07.07.2025 – 13.07.2025/page_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_23.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_26.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_27.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_28.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_29.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_31.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_33.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_34.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_35.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_36.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_37.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_38.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_39.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_41.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_42.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_43.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_44.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_45.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_46.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_47.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_48.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_49.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_50.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_51.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_52.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_53.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_54.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_55.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_56.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_57.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_58.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_59.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_60.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_61.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_62.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_63.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_64.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_65.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_66.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_67.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_68.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_69.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_70.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_71.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_72.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_73.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_1_от 07.07. до 13.07/page_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_23.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_26.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_27.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_28.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_29.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_31.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_33.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_34.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_35.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_36.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_37.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_38.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_39.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_41.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_42.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_43.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_44.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_45.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_46.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_47.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_48.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_49.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_50.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_51.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_52.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_53.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_54.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_55.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_56.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_57.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_58.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_59.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_60.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_61.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_62.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_63.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_64.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_65.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/flyers/lidl/Брошура_2_от 14.07. до 20.07/page_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/labels/train.cache" beforeDir="false" afterPath="$PROJECT_DIR$/YOLOv8/data/labels/train.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/data/labels/val.cache" beforeDir="false" afterPath="$PROJECT_DIR$/YOLOv8/data/labels/val.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/product_blocks.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/YOLOv8/product_blocks.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YOLOv8/scripts/split_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/YOLOv8/scripts/split_dataset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent_better/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/process/pages/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent_better/broshura/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent_better/broshura/broshura.bg_scraping.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent_better/kaufland/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent_better/kaufland/kaufland_pdf_extraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/process/flyer_scrapers/kaufland/pdf_processing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent_better/kaufland/popup_helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/process/flyer_scrapers/kaufland/popup_helper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent_better/lidl/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent_better/lidl/lidl_pdf_extraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/process/flyer_scrapers/lidl/pdf_processing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent_better/lidl/popup_helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/process/flyer_scrapers/lidl/popup_helper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent_better/pages/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent_better/pages/extract.py" beforeDir="false" afterPath="$PROJECT_DIR$/process/pages/extraction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/scripts/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/YOLOv8/scripts/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/scripts/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/YOLOv8/scripts/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/process/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/core/finder.py" beforeDir="false" afterPath="$PROJECT_DIR$/process/core/finder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/core/scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/process/core/scraper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/core/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/flyer_scrapers/kaufland/pdf_processing.py" beforeDir="false" afterPath="$PROJECT_DIR$/process/flyer_scrapers/kaufland/pdf_processing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/flyer_scrapers/lidl/pdf_processing.py" beforeDir="false" afterPath="$PROJECT_DIR$/process/flyer_scrapers/lidl/pdf_processing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/process/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/pages/extraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/process/pages/extraction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process/popup_helper.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +345,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "automatic__scraping__from__broshura__bg",
-    "last_opened_file_path": "D:/Progaming/PyCharm_Projects/Market_Model/agent_better/data/downloads",
+    "last_opened_file_path": "D:/Progaming/PyCharm_Projects/Market_Model/YOLOv8/data/flyers/Брошура_1_от 07.07. до 13.07",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -137,16 +357,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Progaming\PyCharm_Projects\Market_Model\agent_better\data\downloads" />
-      <recent name="D:\Progaming\PyCharm_Projects\Market_Model\agent_better\data\lidl" />
-      <recent name="D:\Progaming\PyCharm_Projects\Market_Model" />
+      <recent name="D:\Progaming\PyCharm_Projects\Market_Model\YOLOv8\data\flyers\Брошура_1_от 07.07. до 13.07" />
+      <recent name="D:\Progaming\PyCharm_Projects\Market_Model\data\all" />
+      <recent name="D:\Progaming\PyCharm_Projects\Market_Model\YOLOv8\data\labels\train" />
+      <recent name="D:\Progaming\PyCharm_Projects\Market_Model\YOLOv8\data\images\train" />
+      <recent name="D:\Progaming\PyCharm_Projects\Market_Model\YOLOv8\data\images\val" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Progaming\PyCharm_Projects\Market_Model\YOLOv8\data\flyers" />
+      <recent name="D:\Progaming\PyCharm_Projects\Market_Model\YOLOv8\data" />
       <recent name="D:\Progaming\PyCharm_Projects\Market_Model\data" />
+      <recent name="D:\Progaming\PyCharm_Projects\Market_Model\YOLOv8\models\training" />
       <recent name="D:\Progaming\PyCharm_Projects\Market_Model\process\flyer_scrapers\lidl\downloads" />
-      <recent name="D:\Progaming\PyCharm_Projects\Market_Model\process\flyer_scrapers\kaufland\downloads" />
-      <recent name="D:\Progaming\PyCharm_Projects\Market_Model\scraping\flyer_scrapers" />
-      <recent name="D:\Progaming\PyCharm_Projects\Market_Model\flyer_scrapers\flyer_scrapers" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -169,7 +391,8 @@
       <workItem from="1752063450981" duration="11594000" />
       <workItem from="1752127193550" duration="2745000" />
       <workItem from="1752130034573" duration="347000" />
-      <workItem from="1752215266518" duration="4914000" />
+      <workItem from="1752215266518" duration="26394000" />
+      <workItem from="1752471951510" duration="12980000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -215,16 +438,5 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/process/core/finder.py</url>
-          <line>37</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

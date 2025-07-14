@@ -11,7 +11,7 @@ __pycache__/
 *.pyo
 *.pyd
 
-# 4. Ignore YOLO training outputs and large generated files
+# 4. Ignore YOLO trained outputs and large generated files
 runs/
 YOLOv8/train*/
 YOLOv8/val*/
@@ -26,6 +26,9 @@ process/flyer_scrapers/kaufland/screenshots/
 process/flyer_scrapers/lidl/screenshots/
 data/downloads
 data/labels
+
+# 7. Don't update the model training
+YOLOv8/scripts/train.py
 
 # 7. Ignore logs or temporary testing files
 *.log

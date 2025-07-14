@@ -7,12 +7,18 @@ from utils import create_folder_if_not_exists, sanitize_filename
 async def find_magazine_test(page, context):
 
     magazines = await page.query_selector_all("span.text-grid[data-tile-out]")
-
+    print(f'Found {len(magazines)} magazines')
     for i in range(len(magazines)):
 
         # Refresh the selectors
+
         magazines = await page.query_selector_all("span.text-grid[data-tile-out]")
-        magazine = magazines[i]
+        try:
+            magazine = magazines[i+3]
+        except IndexError:
+            print("End of flyers_images_labels in broshura.bg!")
+            break
+
         name = await magazine.inner_text()
         safe_name = sanitize_filename(name)
         print(f"============ Processing magazine ============\n\"{safe_name}\"")
@@ -22,9 +28,9 @@ async def find_magazine_test(page, context):
         await page.wait_for_load_state('networkidle')
 
         # Picture for debugging
-        folder_path = f"screenshots/{safe_name}"
+        folder_path = f"data/screenshots/{safe_name}"
         create_folder_if_not_exists(folder_path)
-        await page.screenshot(path=f"screenshots/{safe_name}/cover.png")
+        await page.screenshot(path=f"{folder_path}/cover.png")
 
         #print(f"Current URL: {page.url}")
         url_selector = await page.wait_for_selector('div.component-pageflip')
@@ -34,13 +40,12 @@ async def find_magazine_test(page, context):
         if url_selector:
             print(f"FOUND supermarket site link for \"{safe_name}\"!")
             url = await url_selector.get_attribute('data-back-url')
-            ran_supermarket = await scrape_website(url)
-            if ran_supermarket:
-                return
+            success = await scrape_website(url)
 
-        print("Scraping pages...")
-        await scrape_pages(page, safe_name)
-        print("Finished scraping of the pages.")
+        if not success:
+            print("Scraping pages...")
+            await scrape_pages(page, safe_name)
+            print("Finished scraping of the pages.")
 
         # Go back to the main page
         await page.goto("https://www.broshura.bg/i/3")

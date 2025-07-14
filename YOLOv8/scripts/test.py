@@ -7,7 +7,6 @@ from ultralytics import YOLO
 
 # Path to trained model weights
 MODEL_PATH = '../train12/weights/last.pt'
-
 # Path to validation images
 VAL_IMAGES_DIR = '../data/images/val'
 
@@ -52,7 +51,7 @@ def main():
     # Load trained YOLOv8 model
     model = YOLO(MODEL_PATH)
 
-    # List all image files in validation folder
+    # List sorted_images_labels image files in validation folder
     image_files = [f for f in os.listdir(VAL_IMAGES_DIR) if f.lower().endswith('.png')]
 
     for img_name in image_files:

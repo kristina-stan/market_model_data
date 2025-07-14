@@ -1,51 +1,73 @@
-from pdf2image import convert_from_path
 import os
+import random
+import shutil
 
-# Input paths
-input_dirs = {
-    "kaufland": "../../process/kaufland/downloads",
-    "lidl": "../../process/lidl/downloads"
-}
+# flyers_images_labels -> sorted_images_labels/images and sorted_images_labels/labels
+def collect_from_flyers(flyers_folder='../data/flyers_images_labels', all_folder='../data/sorted_images_labels'):
+    images_dst = os.path.join(all_folder, 'images')
+    labels_dst = os.path.join(all_folder, 'labels')
+    os.makedirs(images_dst, exist_ok=True)
+    os.makedirs(labels_dst, exist_ok=True)
 
-# Output folder
-output_folder = "../data/flyers"
-os.makedirs(output_folder, exist_ok=True)
-
-def extract_pages(store_name, source_dir):
-    for filename in os.listdir(source_dir):
-        if not filename.lower().endswith(".pdf"):
+    for root, dirs, files in os.walk(flyers_folder):
+        if 'sorted_images_labels' in root:
             continue
+        for file in files:
+            src = os.path.join(root, file)
+            if file.endswith('.png'):
+                shutil.copy2(src, os.path.join(images_dst, file))
+            elif file.endswith('.txt'):
+                shutil.copy2(src, os.path.join(labels_dst, file))
 
-        pdf_path = os.path.join(source_dir, filename)
-        base_name = os.path.splitext(filename)[0]  # no .pdf
 
-        print(f"[{store_name.upper()}] Processing: {filename}")
+def split_data(
+    all_images_dir='../data/sorted_images_labels/images',
+    all_labels_dir='../data/sorted_images_labels/labels',
+    output_base='../data',
+    train_ratio=0.8,
+    seed=42
+):
+    random.seed(seed)
 
-        try:
-            pages = convert_from_path(pdf_path, dpi=300)
-        except Exception as e:
-            print(f"Failed to convert {filename}: {e}")
-            continue
+    all_images = [f for f in os.listdir(all_images_dir) if f.endswith('.png')]
+    random.shuffle(all_images)
 
-        flyer_folder = os.path.join(output_folder, store_name, base_name)
-        os.makedirs(flyer_folder, exist_ok=True)
+    split_index = int(len(all_images) * train_ratio)
+    train_images = all_images[:split_index]
+    val_images = all_images[split_index:]
 
-        print("Saving pages...")
-        for i, page in enumerate(pages, start=1):
-            img_filename = f"page_{i}.png"
-            page_path = os.path.join(flyer_folder, img_filename)
-            try:
-                page.save(page_path, format="PNG")
-            except Exception as e:
-                print(f"Failed to save page {img_filename}: {e}")
+    image_train_dir = os.path.join(output_base, 'images', 'train')
+    image_val_dir = os.path.join(output_base, 'images', 'val')
+    label_train_dir = os.path.join(output_base, 'labels', 'train')
+    label_val_dir = os.path.join(output_base, 'labels', 'val')
 
-        print(f"[{store_name.upper()}] Done: {filename}\n")
+    for d in [image_train_dir, image_val_dir, label_train_dir, label_val_dir]:
+        os.makedirs(d, exist_ok=True)
 
-    print(f"[{store_name.upper()}] All PDFs processed.\n")
+    def copy_files(image_list, image_dst, label_dst):
+        for image_name in image_list:
+            base_name = os.path.splitext(image_name)[0]
+            label_name = base_name + '.txt'
 
-def main():
-    for store_name, path in input_dirs.items():
-        extract_pages(store_name, path)
+            image_src = os.path.join(all_images_dir, image_name)
+            label_src = os.path.join(all_labels_dir, label_name)
 
-if __name__ == "__main__":
-    main()
+            image_dst_path = os.path.join(image_dst, image_name)
+            label_dst_path = os.path.join(label_dst, label_name)
+
+            shutil.copy2(image_src, image_dst_path)
+
+            if os.path.exists(label_src):
+                shutil.copy2(label_src, label_dst_path)
+            else:
+                print(f"[WARN] Label not found for image: {image_name}")
+
+    copy_files(train_images, image_train_dir, label_train_dir)
+    copy_files(val_images, image_val_dir, label_val_dir)
+
+    print(f"[DONE] Split: {len(train_images)} train / {len(val_images)} val")
+
+
+if __name__ == '__main__':
+    collect_from_flyers()
+    split_data()
