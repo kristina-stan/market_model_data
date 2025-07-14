@@ -2,6 +2,8 @@ import os
 import random
 import shutil
 
+#---------- ORGANISES THE DATASET ----------
+
 # flyers_images_labels -> sorted_images_labels/images and sorted_images_labels/labels
 def collect_from_flyers(flyers_folder='../data/flyers_images_labels', all_folder='../data/sorted_images_labels'):
     images_dst = os.path.join(all_folder, 'images')

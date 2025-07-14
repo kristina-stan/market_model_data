@@ -16,7 +16,7 @@ runs/
 YOLOv8/train*/
 YOLOv8/val*/
 YOLOv8/models/trained
-YOLOv8/models/types
+YOLOv8/models/types/
 YOLOv8/data/flyers_images_labels/
 YOLOv8/data/sorted_images_labels/
 YOLOv8/data/images/

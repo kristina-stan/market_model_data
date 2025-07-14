@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e6cd19df-65a2-4f3b-b454-d2cf0d9bb77f" name="Changes" comment="Initial commit">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv8/scripts/split_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/YOLOv8/scripts/split_dataset.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +104,7 @@
       <workItem from="1752127193550" duration="2745000" />
       <workItem from="1752130034573" duration="347000" />
       <workItem from="1752215266518" duration="26394000" />
-      <workItem from="1752471951510" duration="13361000" />
+      <workItem from="1752471951510" duration="14846000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
