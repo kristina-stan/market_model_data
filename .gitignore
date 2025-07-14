@@ -15,17 +15,22 @@ __pycache__/
 runs/
 YOLOv8/train*/
 YOLOv8/val*/
+YOLOv8/models/trained
+YOLOv8/models/types
+YOLOv8/data/flyers_images_labels/
+YOLOv8/data/sorted_images_labels/
+YOLOv8/data/images/
+YOLOv8/data/labels/
 
 # 5. Ignore YOLO model weights (if not versioning them)
 YOLOv8/models/*.pt
 
 # 6. Ignore PDFs and screenshots (if large or temporary)
-process/flyer_scrapers/kaufland/downloads/
-process/flyer_scrapers/lidl/downloads/
 process/flyer_scrapers/kaufland/screenshots/
 process/flyer_scrapers/lidl/screenshots/
-data/downloads
-data/labels
+data/pages
+data/screenshots
+# data/downloads # let it get sended so it has a base to run from
 
 # 7. Don't update the model training
 YOLOv8/scripts/train.py
@@ -33,7 +38,3 @@ YOLOv8/scripts/train.py
 # 7. Ignore logs or temporary testing files
 *.log
 *.tmp
-
-# 8. (Optional) Ignore dataset backup or image cache folders
-YOLOv8/data/all_images/
-YOLOv8/data/all_labels/
